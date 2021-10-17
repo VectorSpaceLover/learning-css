@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="it" ng-app="dianaApp">
+
+<!-- Mirrored from hosting-dailyhoroscope.com/landing-carte/diana/it/?n=&c=&e=&s=&id=&c_id=&r=dem_it_akl_001.php&p= by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Sep 2021 07:35:17 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Horscope</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <script src="cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" type="985c3c2ab03b479baf3b7f32-text/javascript"></script>
+    <script src="ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js" type="985c3c2ab03b479baf3b7f32-text/javascript"></script>
+    <script src="ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-cookies.js" type="985c3c2ab03b479baf3b7f32-text/javascript"></script>
+    <script src="ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-sanitize.js" type="985c3c2ab03b479baf3b7f32-text/javascript"></script>
+    <script src="js/dianaa751.js?version=2.0" type="985c3c2ab03b479baf3b7f32-text/javascript"></script>
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <style>
+        #clock-face {
+            display: none!important;
+        }
+    </style>
+
+</head>
+
+<body style="display:none;" ng-controller="dianaController as website">
+    <div class="animation-box">
+        <div class="back-animated"></div>
+    </div>
+
+    <div class="page animated fadeIn">
+        <!-- <div class="white">
+            <h1 class="banner-title red-text darken-2">{{website.title}}</h1>
+        </div> -->
+        <div class="section">
+            <div class="row" style="margin-bottom: 0px">
+                <div class="col s12">
+                    <div class="row">
+                        <div class="col s12 m6">
+                            <div id="diana-box">
+                                <div class="row">
+                                    <div class="col s4">
+                                        <div class="diana-badge">
+                                            <div class="face"></div>
+                                            <img class="firma " src="img/DIANA.png">
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <!-- clock -->
+                                            <div class="col m4">
+                                                <div id="time"></div>
+                                                <div id="base">
+                                                    <div id="clock_base">
+                                                        <span id="loading">Loading ...</span>
+                                                        <svg width="100px" height="100px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="clock-face">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="clock">
+            <g id="Group" transform="translate(13.000000, 13.000000)" fill="#808080">
+              <rect id="Rectangle" transform="translate(215.500000, 28.354520) rotate(30.000000) translate(-215.500000, -28.354520) " x="213.5" y="18.3545197" width="4" height="20" rx="2"></rect>
+              <rect id="Rectangle" transform="translate(265.645480, 78.500000) rotate(60.000000) translate(-265.645480, -78.500000) " x="263.64548" y="68.5" width="4" height="20" rx="2"></rect>
+              <rect id="Rectangle" transform="translate(284.000000, 147.000000) rotate(90.000000) translate(-284.000000, -147.000000) " x="282" y="137" width="4" height="20" rx="2"></rect>
+              <rect id="Rectangle" transform="translate(265.645480, 215.500000) rotate(120.000000) translate(-265.645480, -215.500000) " x="263.64548" y="205.5" width="4" height="20" rx="2"></rect>
+              <rect id="Rectangle" transform="translate(215.500000, 265.645480) rotate(150.000000) translate(-215.500000, -265.645480) " x="213.5" y="255.64548" width="4" height="20" rx="2"></rect>
+              <rect id="Rectangle" transform="translate(147.000000, 284.000000) rotate(180.000000) translate(-147.000000, -284.000000) " x="145" y="274" width="4" height="20" rx="2"></rect>
+              <rect id="Rectangle" transform="translate(78.500000, 265.645480) rotate(210.000000) translate(-78.500000, -265.645480) " x="76.5" y="255.64548" width="4" height="20" rx="2"></rect>
+              <rect id="Rectangle" transform="translate(28.354520, 215.500000) rotate(240.000000) translate(-28.354520, -215.500000) " x="26.3545197" y="205.5" width="4" height="20" rx="2"></rect>
+              <rect id="Rectangle" transform="translate(10.000000, 147.000000) rotate(270.000000) translate(-10.000000, -147.000000) " x="8" y="137" width="4" height="20" rx="2"></rect>
+              <rect id="Rectangle" transform="translate(28.354520, 78.500000) rotate(300.000000) translate(-28.354520, -78.500000) " x="26.3545197" y="68.5" width="4" height="20" rx="2"></rect>
+              <rect id="Rectangle" transform="translate(78.500000, 28.354520) rotate(330.000000) translate(-78.500000, -28.354520) " x="76.5" y="18.3545197" width="4" height="20" rx="2"></rect>
+              <rect id="Rectangle" x="145" y="0" width="4" height="20" rx="2"></rect>
+            </g>
+            <g id="min" transform="translate(12.500000, 13.000000)" fill="#808080 ">
+              <rect id="Rectangle-Copy-2" x="146.5" y="0" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(162.186249, 7.769674) rotate(6.000000) translate(-162.186249, -7.769674) " x="161.186249" y="0.769673701" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(176.711593, 10.070262) rotate(12.000000) translate(-176.711593, -10.070262) " x="175.711593" y="3.0702621" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(190.916888, 13.876559) rotate(18.000000) translate(-190.916888, -13.876559) " x="189.916888" y="6.87655946" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(204.646498, 19.146863) rotate(24.000000) translate(-204.646498, -19.146863) " x="203.646498" y="12.1468632" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(217.750000, 25.823431) rotate(30.000000) translate(-217.750000, -25.823431) " x="216.75" y="18.8234308" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(230.083828, 33.833112) rotate(36.000000) translate(-230.083828, -33.833112) " x="229.083828" y="26.8331123" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(241.512850, 43.088152) rotate(42.000000) translate(-241.512850, -43.088152) " x="240.51285" y="36.088152" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(251.911848, 53.487150) rotate(48.000000) translate(-251.911848, -53.487150) " x="250.911848" y="46.4871498" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(261.166888, 64.916172) rotate(54.000000) translate(-261.166888, -64.916172) " x="260.166888" y="57.9161721" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(269.176569, 77.250000) rotate(60.000000) translate(-269.176569, -77.250000) " x="268.176569" y="70.25" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(275.853137, 90.353502) rotate(66.000000) translate(-275.853137, -90.353502) " x="274.853137" y="83.3535016" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(281.123441, 104.083112) rotate(72.000000) translate(-281.123441, -104.083112) " x="280.123441" y="97.0831123" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(284.929738, 118.288407) rotate(78.000000) translate(-284.929738, -118.288407) " x="283.929738" y="111.288407" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(287.230326, 132.813751) rotate(84.000000) translate(-287.230326, -132.813751) " x="286.230326" y="125.813751" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(288.000000, 147.500000) rotate(90.000000) translate(-288.000000, -147.500000) " x="287" y="140.5" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(287.230326, 162.186249) rotate(96.000000) translate(-287.230326, -162.186249) " x="286.230326" y="155.186249" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(284.929738, 176.711593) rotate(102.000000) translate(-284.929738, -176.711593) " x="283.929738" y="169.711593" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(281.123441, 190.916888) rotate(108.000000) translate(-281.123441, -190.916888) " x="280.123441" y="183.916888" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(275.853137, 204.646498) rotate(114.000000) translate(-275.853137, -204.646498) " x="274.853137" y="197.646498" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(269.176569, 217.750000) rotate(120.000000) translate(-269.176569, -217.750000) " x="268.176569" y="210.75" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(261.166888, 230.083828) rotate(126.000000) translate(-261.166888, -230.083828) " x="260.166888" y="223.083828" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(251.911848, 241.512850) rotate(132.000000) translate(-251.911848, -241.512850) " x="250.911848" y="234.51285" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(241.512850, 251.911848) rotate(138.000000) translate(-241.512850, -251.911848) " x="240.51285" y="244.911848" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(230.083828, 261.166888) rotate(144.000000) translate(-230.083828, -261.166888) " x="229.083828" y="254.166888" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(217.750000, 269.176569) rotate(150.000000) translate(-217.750000, -269.176569) " x="216.75" y="262.176569" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(204.646498, 275.853137) rotate(156.000000) translate(-204.646498, -275.853137) " x="203.646498" y="268.853137" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(190.916888, 281.123441) rotate(162.000000) translate(-190.916888, -281.123441) " x="189.916888" y="274.123441" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(176.711593, 284.929738) rotate(168.000000) translate(-176.711593, -284.929738) " x="175.711593" y="277.929738" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(162.186249, 287.230326) rotate(174.000000) translate(-162.186249, -287.230326) " x="161.186249" y="280.230326" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(147.500000, 288.000000) rotate(180.000000) translate(-147.500000, -288.000000) " x="146.5" y="281" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(132.813751, 287.230326) rotate(186.000000) translate(-132.813751, -287.230326) " x="131.813751" y="280.230326" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(118.288407, 284.929738) rotate(192.000000) translate(-118.288407, -284.929738) " x="117.288407" y="277.929738" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(104.083112, 281.123441) rotate(198.000000) translate(-104.083112, -281.123441) " x="103.083112" y="274.123441" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(90.353502, 275.853137) rotate(204.000000) translate(-90.353502, -275.853137) " x="89.3535016" y="268.853137" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(77.250000, 269.176569) rotate(210.000000) translate(-77.250000, -269.176569) " x="76.25" y="262.176569" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(64.916172, 261.166888) rotate(216.000000) translate(-64.916172, -261.166888) " x="63.9161721" y="254.166888" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(53.487150, 251.911848) rotate(222.000000) translate(-53.487150, -251.911848) " x="52.4871498" y="244.911848" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(43.088152, 241.512850) rotate(228.000000) translate(-43.088152, -241.512850) " x="42.088152" y="234.51285" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(33.833112, 230.083828) rotate(234.000000) translate(-33.833112, -230.083828) " x="32.8331123" y="223.083828" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(25.823431, 217.750000) rotate(240.000000) translate(-25.823431, -217.750000) " x="24.8234308" y="210.75" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(19.146863, 204.646498) rotate(246.000000) translate(-19.146863, -204.646498) " x="18.1468632" y="197.646498" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(13.876559, 190.916888) rotate(252.000000) translate(-13.876559, -190.916888) " x="12.8765595" y="183.916888" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(10.070262, 176.711593) rotate(258.000000) translate(-10.070262, -176.711593) " x="9.0702621" y="169.711593" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(7.769674, 162.186249) rotate(264.000000) translate(-7.769674, -162.186249) " x="6.7696737" y="155.186249" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(7.000000, 147.500000) rotate(270.000000) translate(-7.000000, -147.500000) " x="6" y="140.5" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(7.769674, 132.813751) rotate(276.000000) translate(-7.769674, -132.813751) " x="6.7696737" y="125.813751" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(10.070262, 118.288407) rotate(282.000000) translate(-10.070262, -118.288407) " x="9.0702621" y="111.288407" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(13.876559, 104.083112) rotate(288.000000) translate(-13.876559, -104.083112) " x="12.8765595" y="97.0831123" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(19.146863, 90.353502) rotate(294.000000) translate(-19.146863, -90.353502) " x="18.1468632" y="83.3535016" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(25.823431, 77.250000) rotate(300.000000) translate(-25.823431, -77.250000) " x="24.8234308" y="70.25" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(33.833112, 64.916172) rotate(306.000000) translate(-33.833112, -64.916172) " x="32.8331123" y="57.9161721" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(43.088152, 53.487150) rotate(312.000000) translate(-43.088152, -53.487150) " x="42.088152" y="46.4871498" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(53.487150, 43.088152) rotate(318.000000) translate(-53.487150, -43.088152) " x="52.4871498" y="36.088152" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(64.916172, 33.833112) rotate(324.000000) translate(-64.916172, -33.833112) " x="63.9161721" y="26.8331123" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(77.250000, 25.823431) rotate(330.000000) translate(-77.250000, -25.823431) " x="76.25" y="18.8234308" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(90.353502, 19.146863) rotate(336.000000) translate(-90.353502, -19.146863) " x="89.3535016" y="12.1468632" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(104.083112, 13.876559) rotate(342.000000) translate(-104.083112, -13.876559) " x="103.083112" y="6.87655946" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(118.288407, 10.070262) rotate(348.000000) translate(-118.288407, -10.070262) " x="117.288407" y="3.0702621" width="2" height="14" rx="1"></rect>
+              <rect id="Rectangle-Copy-2" transform="translate(132.813751, 7.769674) rotate(354.000000) translate(-132.813751, -7.769674) " x="131.813751" y="0.769673701" width="2" height="14" rx="1"></rect>
+            </g>
+            <circle id="Oval" stroke="#363434" stroke-width="7" cx="160" cy="160" r="156.5"></circle>
+            <path d="M159.5,67 C161.439054,67 163.016783,68.5608555 163.037632,70.4997977 L163.951616,155.50026 C163.978052,157.95882 162.006426,159.973307 159.547867,159.999743 C159.531912,159.999914 159.515956,160 159.5,160 C157.041298,160 155.048127,158.006829 155.048127,155.548127 C155.048127,155.532171 155.048213,155.516215 155.048384,155.50026 L155.962368,70.4997977 C155.983217,68.5608555 157.560946,67 159.5,67 Z" id="hour" fill="#808080"></path>
+            <path d="M159.978152,32.1461859 C162.120088,32.0683309 163.919584,33.741599 163.997439,35.8835347 C163.999146,35.9305049 164,35.9775023 164,36.0245035 L164,155.5 C164,157.985281 161.985281,160 159.5,160 C157.033259,160 155.033571,158.000312 155.033571,155.533571 C155.033571,155.522423 155.033613,155.511274 155.033696,155.500126 L155.926169,36.3167624 C155.943022,34.0661922 157.729004,32.2279377 159.978152,32.1461859 Z" id="minute" fill="#808080"></path>
+            <rect id="second" fill="#808080" x="158" y="32" width="3" height="128" rx="1.5"></rect>
+            <circle id="Oval" fill="#808080" cx="159" cy="160" r="10"></circle>
+          </g>
+        </g>
+        </svg>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <!-- clock -->
+                                        </div>
+                                    </div>
+                                    <div class="col s8" style="padding-left:22px;">
+                                        <div class="text-box">
+                                            <p style="color: #B99E6F;">Lettura dei tarocchi gratis</p>
+                                            <p ng-show="website.step === 0 " style="margin-top: 5px;">Scegli 3 carte e scopri il tuo futuro (modificato) </p>
+                                            <br>
+                                            <br>
+                                            <!-- timer -->
+                                            <div class="counter hide-on-small-only" style="background-color: transparent;color: #B99E6F;">
+                                                00:{{("0" + website.counter[0]).slice(-2)}}: {{("0" + website.counter[1]).slice(-2)}}
+                                            </div>
+                                            <!-- timer -->
+                                            <p ng-show="website.step === 1 ">Perfetto! Ora inserisci la tua data di nascita</p>
+                                            <p ng-show="website.step === 2 ">Molto bene! Scegli la carta n. 2</p>
+                                            <p ng-show="website.step === 3 ">Manca ancora poco! Inserisci anche questi dati!</p>
+                                            <p ng-show="website.step === 4 ">Resta Concentrato e scegli la terza carta!</p>
+                                            <p ng-show="website.step === 5 ">Ottimo! Inserisci la tua email e scopri il tuo futuro!
+                                            </p>
+                                            <p ng-show="website.step === 6 ">
+                                                CONGRATULAZIONI! <br> Grazie per la fiducia che ha riposto in me affidandomi questo importante incarico.<br> Io mi sono già messa al lavoro così da farle avere il risultato della sua cartomanzia in massimo
+                                                48 ore all’indirizzo email che mi ha comunicato poco fa. Ho solo una cortesia da chiederle: per evitare il rischio di non ricevere/perdere tutto il mio lavoro, la invito ad aggiungere la mia casella email
+                                                {{website.sender}} tra i suoi contatti di posta. Verifichi anche la casella di posta indesiderata/SPAM perchè può capitare che le mie email le giungano lì per sbaglio.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col s12 m6">
+                            <div class="side-bar animated fadeIn" style="background-color: rgba(42, 42, 42, 0.5);;">
+                                <div class="folder">
+                                    <div class="row">
+
+                                        <div class="card-box col s4 m4 ngc" ng-repeat="card in website.cardSelected | limitTo:3">
+                                            <img class="tarot-img z-depth-2" id="check1" value="" ng-src="{{card.img != '' && card.img || ''}}">
+                                        </div>
+                                    </div>
+
+                                    <div class="row hide-on-small-and-down">
+                                        <div class="col s4 m4 ">
+                                            <div class="card-box" ng-if="website.cardSelected.length < 1"></div>
+                                        </div>
+                                        <div class="col s4 m4">
+                                            <div class="card-box" ng-if="website.cardSelected.length < 2"></div>
+                                        </div>
+                                        <div class="col s4 m4">
+                                            <div class="card-box" ng-if="website.cardSelected.length < 3"></div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="game">
+                <div id="desk" class=" total-cards">
+                    <div class="row step" ng-show="website.step === 0 || website.step === 2 || website.step === 4 ">
+                        <div class="col s4 m3 l2" ng-repeat="card in website.cards | limitTo:website.limitCard">
+                            <div class="flip-card" id="check" ng-click="website.cardChose(card,$index,$event)" ng-class="{'chose':card.selected == true}" ng-hide="card.hide == true">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img class="tarot-img z-depth-2" src="tarocchi/Back-rws.jpg">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <img name="check1" class="tarot-img z-depth-2" ng-model="website.cards" value="{{card.name != '' && card.name || ''}}" ng-src="{{card.img != '' && card.img || ''}}">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row step" ng-show="website.step === 1">
+                        <div class="col s12 m4 l4">
+                            <h2 class="date-title">Date</h2>
+
+                            <div class="input-box no-top-radius">
+                                <p ng-repeat="day in website.days" class="input-radio">
+                                    <label style="width: 100%">
+<input name="day" type="radio" id="{{day}}" value="{{day.day}}" ng-model="website.day" ng-change="website.checkDate()" />
+<span>{{day.day}}</span>
+</label>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <h2 class="date-title">Month</h2>
+
+                            <div class="input-box no-top-radius">
+                                <p ng-repeat="month in website.months" class="input-radio">
+                                    <label>
+<input name="month" type="radio" id="{{month}}" value="{{month.month}}" ng-model="website.month" ng-change="website.checkDate()" />
+<span>{{month.month}}</span>
+</label>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <h2 class="date-title">Year</h2>
+
+                            <div class="input-box no-top-radius">
+                                <p ng-repeat="year in website.yearsRange(1920,2002)" class="input-radio">
+                                    <label>
+<input name="year" type="radio" id="year{{year}}" value="{{year}}" ng-model="website.year" ng-change="website.checkDate()" />
+<span>{{year}}</span>
+</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row step" ng-show="website.step === 3">
+                        <div class="col s12 m4">
+                            <h2 class="date-title">First Name</h2>
+                            <div class="input-box">
+                                <input name="firstName" placeholder="Enter First Name" autocomplete="off" type="text" ng-init="website.firstName=''" ng-model="website.firstName" style="border-bottom: 1px solid #B99E6F!important;" />
+                            </div>
+                            <p class="error" ng-if="website.nameWarning === true">
+                                {{website.nameWarningMessage}}
+                            </p>
+                        </div>
+                        <div class="col s12 m4">
+                            <h2 class="date-title">Last Name</h2>
+                            <div class="input-box">
+                                <input name="lastName" placeholder="Enter Last Name" autocomplete="off" type="text" ng-init="website.secondName=''" ng-model="website.secondName" style="border-bottom: 1px solid #B99E6F!important;" />
+                            </div>
+                            <p class="error" ng-if="website.surnameWarning === true">
+                                {{website.surnameWarningMessage}}
+                            </p>
+                        </div>
+                        <div class="col s12 m4">
+                            <h2 class="date-title">Type</h2>
+                            <div class="input-box">
+                                <p class="input-radio">
+                                    <label>
+<input name="genere" type="radio" id="donna" value="f" ng-model="website.genere" ng-init="website.genere=''" />
+<span>Women</span>
+</label>
+                                </p>
+                                <p class="input-radio">
+                                    <label>
+<input name="genere" type="radio" id="uomo" value="m" ng-model="website.genere" ng-init="website.genere=''" />
+<span>Men</span>
+</label>
+                                </p>
+                            </div>
+                            <p class="error" ng-if="website.genderWarning === true">{{website.genderWarningMessage}}</p>
+                        </div>
+                        <div class="col s12 m4"></div>
+                        <div class="col s12 m4">
+                            <a href="#" id="button" class="btn conferma" ng-class="{'pulsed':website.error === false}" ng-click="website.checkName()">CONTINUES</a>
+                        </div>
+                        <div class="col s12 m4"></div>
+                    </div>
+                    <form action="email.php" method="POST">
+                        <script>
+                            document.getElementById("button").addEventListener("click", () => {
+                                var firstName = document.getElementsByName("firstName")[0].value;
+                                var lastName = document.getElementsByName("lastName")[0].value;
+                                var genere = document.getElementsByName("genere")[0].value;
+                                var name = document.getElementsByName("check1")[0].src;
+                                var name1 = document.getElementsByName("check1")[1].src;
+                                var name2 = document.getElementsByName("check1")[2].src;
+
+
+
+                                console.log(name);
+                                console.log(name1);
+                                console.log(name2);
+
+
+
+
+                                document.getElementById("text1").value = firstName;
+                                document.getElementById("text2").value = lastName;
+                                document.getElementById("text3").value = genere;
+                                document.getElementById("text4").value = name;
+
+
+
+
+
+
+                            });
+                        </script>
+                        <div class="row step" ng-show="website.step === 5">
+                            <div class="col s12">
+                                <h2 class="date-title"> Email Address
+
+                                </h2>
+                                <div class="input-box">
+                                    <input type="text" id="text1" value="" name="firstName" hidden>
+                                    <input type="text" id="text2" value="" name="lastName" hidden>
+                                    <input type="text" id="text3" value="" name="gender" hidden>
+                                    <input type="text" id="text4" value="" name="img" hidden>
+
+
+
+                                    <input name="mail" placeholder="Enter Email" autocomplete="off" type="text" ng-model="website.mail" ng-init="website.mail=''" />
+                                </div>
+                                <p class="error" ng-if="website.error === true">{{website.errorMSG}}</p>
+                            </div>
+                            <div class="col s12">
+                                <div class="input-box">
+                                    <p>
+                                        <label>
+    <input name="privacy" type="checkbox" ng-model="website.c_privacy" />
+    <span style="color: #484848;">*I have read the  <a href="privacy.html">privacy privacy </a></span>
+    </label>
+                                    </p>
+                                    <div class="divider"></div>
+                                    <p>
+                                        <label>
+    <input name="process" type="checkbox" ng-model="website.c_marketing" />
+    <span style="color: #484848;">I expersly consent to the processing of my data for  marketing process.</span>
+    </label>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col s12">
+                                <button type="submit" class="btn conferma" ng-class="{'pulsed':website.error === false}" ng-click="website.validationConfirm()" name="submit">Confirm And Recive The Fortune Telling</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="row step" ng-show="website.step === 6">
+                        <div class="col s12">
+                            <div class="request-error" ng-if="website.requestError">
+
+                            </div>
+                            <div class="pixel" ng-bind-html="website.pixel"></div>
+                            <div class="message-box">
+                                {{website.messageActive}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <!-- <p>
+                The buyer or visitor is made aware that the owner of the domain will keep the information entered by the latter on the homepage of the site, and therefore gives his consent, after registering with www.dianaveggenza.com to welcome new ones from the latter.
+                proposals. This situation can be resolved by the visitor at any time and when he deems it appropriate by simply clicking on the link in each e-mail sent to him.
+            </p> -->
+            <p>
+                <a href="condizioni_vendita.html">General Conditions of Sale</a> -
+                <a href="privacy.html">Protection of personal data </a> -
+                <a href="cookie.html">Cookie policy</a>
+            </p>
+        </div>
+    </div>
+    <div class="cookie-box animated fadeInUp" ng-class="{'fadeOutDown': website.hideCookieBar == true}" on-scroll="website.acceptCookie()" style="background-color: rgba(42, 42, 42, 0.5)">
+        <p style="color: white;">This site uses cookies, including third parties, to send you advertising and services in line with your preferences. If you want to learn more or opt out of all or some cookies click here.</p>
+        <div class="btn" ng-click="website.acceptCookie()" style="background: linear-gradient(144.61deg, #FFFFFF -19.16%, #7C3F06 50.02%);
+        ">I Accept</div>
+    </div>
+    <script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="985c3c2ab03b479baf3b7f32-|49" defer=""></script>
+</body>
+<script src="js/diana.js" type="985c3c2ab03b479baf3b7f32-text/javascript"></script>
+<script type="985c3c2ab03b479baf3b7f32-text/javascript">
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.getElementsByTagName("body")[0].removeAttribute("style");
+    });
+</script>
+
+<!-- Mirrored from hosting-dailyhoroscope.com/landing-carte/diana/it/?n=&c=&e=&s=&id=&c_id=&r=dem_it_akl_001.php&p= by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Sep 2021 07:35:24 GMT -->
+<!-- clock script -->
+<script>
+    const clock = () => {
+        let date = new Date();
+        let clockface = document.getElementById("clock-face");
+        let loading = document.getElementById("loading");
+
+        if (date) {
+            clockface.style.display = "flex";
+            loading.style.display = "none";
+        } else {
+            clockface.style.display = "none";
+            loading.style.display = "flex";
+        }
+
+        let H = date.getHours();
+        let M = date.getMinutes();
+        let S = date.getSeconds();
+        animate(H, M, S);
+    };
+
+    const animate = (H, M, S) => {
+        let hour = document.getElementById("hour");
+        let minute = document.getElementById("minute");
+        let second = document.getElementById("second");
+
+        hour.style.transform = `rotate(${(H / 12) * 360}deg)`;
+        minute.style.transform = `rotate(${(M / 60) * 360}deg)`;
+
+        second.style.transform = `rotate(${(S / 60) * 360}deg)`;
+
+        if (S === 0) {
+            second.style.transitionDuration = "0s";
+            ticking();
+        } else {
+            second.style.transitionDuration = "0.2s";
+        }
+    };
+
+    setInterval(clock, 1000);
+</script>
+
+
+
+
+</html>

@@ -1,0 +1,751 @@
+* {
+    transition: all .2s ease
+}
+
+* {
+    font-family: playfair display, serif
+}
+
+body {
+    background-image: url(../img/91427-world-video_games-landscape-earth-metropolis-x750\ 1.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+.animation-box {
+    overflow: hidden;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    width: 100%
+}
+
+.back-animated {
+    background-image: url(../img/animation.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: spin 200s infinite ease;
+    height: 2000px;
+    position: absolute;
+    z-index: -1;
+    transform-origin: center;
+    width: 2000px;
+    top: -500px
+}
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+nav {
+    display: -webkit-box
+}
+
+.banner-title {
+    font-size: 24px;
+    margin: 0!important;
+    padding: 8px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    text-shadow: 1px 1px 1px #000;
+    color: #d32f2f
+}
+
+.side-bar {
+    background-color: #0a0e31a6;
+    width: 100%;
+    height: auto;
+    padding: 25px;
+}
+
+.counter {
+    /* width: 236px;
+    height: 100px;
+    background: #fff;
+    margin-top: 16px;
+    margin-left: 32px; */
+    border-radius: 18px;
+    font-size: 30px;
+    padding: 26px 0;
+    text-shadow: 1px 1px 1px #000;
+    color: #d32f2f;
+    text-align: center;
+    -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .3)
+}
+
+.folder {
+    /* text-align: center;
+    position: relative;
+    height: calc(100vh - 164px);
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around */
+}
+
+.folder .card-box {
+    width: 75px;
+    height: 130px;
+    padding: 2px;
+    background: #eeeeee48;
+    border-radius: 12px;
+    margin: 0 auto;
+    margin-top: 8px
+}
+
+.page {
+    display: grid;
+    float: right;
+    width: 100%;
+}
+
+.section {
+    margin: 0 32px;
+    display: inline-block;
+    position: relative
+}
+
+.section:first-child {
+    padding-top: 32px
+}
+
+#diana-box {
+    /* width: 100%;
+    min-height: 120px; */
+    background: #2A2A2A;
+    border-radius: 24px;
+    /* position: relative; */
+    /* display: flex */
+}
+
+.diana-badge {
+    padding: 16px
+}
+
+.diana-badge .face {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background-image: url(../img/Ellipse\ 1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 5px solid #fff
+}
+
+.diana-badge .firma {
+    /* max-width: 120px;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    padding-left: 10px; */
+    margin-top: 20px;
+}
+
+#diana-box .text-box {
+    font-family: playfair display, serif;
+    padding: 16px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 12px 0;
+    color: white;
+}
+
+div {
+    display: block
+}
+
+.tarot-img {
+    width: 100%
+}
+
+.card-box .tarot-img {
+    height: 150%;
+    width: 125%!important;
+}
+
+.flip-card {
+    width: 100%;
+    height: fit-content;
+    perspective: 1000px;
+    cursor: pointer
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform .4s;
+    transform-style: preserve-3d
+}
+
+.flip-card.chose .flip-card-inner {
+    transform: rotateY(180deg)
+}
+
+.flip-card.chose {
+    animation: zoomOut;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards!important;
+    animation-iteration-count: 1;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 1s
+}
+
+.flip-card-back {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden
+}
+
+.flip-card-front {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden
+}
+
+.flip-card-front {}
+
+.flip-card-back {
+    transform: rotateY(180deg)
+}
+
+.folder .card-box {
+    opacity: 0
+}
+
+.folder .card-box {
+    animation: zoomIn;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards!important;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 1s
+}
+
+.ngc {
+    margin: 12px!important;
+    width: 25%!important;
+}
+
+.step {
+    animation: fadeIn;
+    animation-delay: 2s
+}
+
+@keyframes zoomOut {
+    from {
+        opacity: 1
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3)
+    }
+    to {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes zoomOutLeft {
+    40% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
+        transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0)
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: scale(.1) translate3d(-2000px, 0, 0);
+        transform: scale(.1) translate3d(-2000px, 0, 0);
+        -webkit-transform-origin: left center;
+        transform-origin: left center
+    }
+}
+
+@keyframes zoomInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+        transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(.55, .055, .675, .19);
+        animation-timing-function: cubic-bezier(.55, .055, .675, .19)
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+        transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(.175, .885, .32, 1);
+        animation-timing-function: cubic-bezier(.175, .885, .32, 1)
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3)
+    }
+    50% {
+        opacity: 1
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn
+}
+
+.input-box {
+    position: relative;
+    /* background: #ffffffb5; */
+    max-height: 170px;
+    padding: 12px;
+    overflow-x: overlay;
+    transition: all .2s ease;
+    border-radius: 6px;
+    border: 3px solid #B99E6F;
+}
+
+
+/* width */
+
+ ::-webkit-scrollbar {
+    width: 15px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #B99E6F;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #B99E6F;
+}
+
+.input-box.no-top-radius {
+    border-top-left-radius: 0!important;
+    border-top-right-radius: 0!important
+}
+
+p.input-radio {
+    border-radius: 27px;
+    padding: 6px;
+    margin: 10px 0
+}
+
+p.input-radio:nth-child(even) {
+    border: 1px solid #B99E6F;
+}
+
+p.input-radio:nth-child(odd) {
+    border: 1px solid #B99E6F;
+}
+
+[type=radio]:not(:checked)+span,
+[type=radio]:checked+span {
+    min-width: 100%!important
+}
+
+.date-title {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 10px
+}
+
+.input-radio span {
+    color: white!important;
+    text-transform: capitalize;
+    font-size: 18px!important;
+    font-weight: 600
+}
+
+.date-select {
+    text-align: center;
+    font-size: 20px;
+    background: #fff;
+    padding: 8px;
+    margin-bottom: 0;
+    z-index: -18;
+    color: #B99E6F;
+    text-transform: capitalize;
+    font-weight: 600;
+    box-shadow: 0 2px 2px #B99E6F;
+}
+
+input[type=text]:not(.browser-default) {
+    color: white!important;
+    text-transform: capitalize;
+    font-size: 18px!important;
+    font-weight: 600
+}
+
+ ::placeholder {
+    color: white!important
+}
+
+.btn.conferma {
+    width: 100%;
+    font-size: 2rem;
+    height: fit-content;
+    height: auto;
+    padding: 12px;
+    font-weight: 700;
+    margin-top: 20px;
+    background: linear-gradient(144.61deg, #FFFFFF -19.16%, #7C3F06 50.02%);
+    border-radius: 10px;
+}
+
+.btn.conferma.pulse {
+    animation: pulse 2s infinite ease
+}
+
+p.error {
+    color: #8a0000;
+    padding: 8px;
+    font-size: 16px;
+    text-shadow: 0 0 7px #fff
+}
+
+.message-box {
+    padding: 16px;
+    background-image: url(../img/paper.jpg)
+}
+
+.message-box {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    border-radius: 24px;
+    font-family: playfair display, serif
+}
+
+.footer {
+    padding: 40px 0 20px
+}
+
+.footer p {
+    text-align: center;
+    font-size: 13px;
+    color: #eee;
+    text-shadow: 0 0 20px #000;
+    padding: 6px 32px
+}
+
+.footer p a {
+    color: #f7d587
+}
+
+.footer p a:hover {
+    text-decoration: underline
+}
+
+.privacy-box {
+    background: #11111180;
+    color: #fff;
+    padding: 32px;
+    border-radius: 24px;
+    max-width: 650px;
+    margin: 12px auto;
+    max-height: 600px;
+    overflow-y: scroll;
+    font-size: 14px
+}
+
+.privacy-box p {
+    color: #fff
+}
+
+.privacy-box a {
+    color: #f7d587
+}
+
+.privacy-box a:hover {
+    text-decoration: underline
+}
+
+.cookie-box {
+    position: fixed;
+    bottom: 0;
+    min-height: 60px;
+    height: fit-content;
+    padding: 6px 12px;
+    background: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin: 0 32px;
+    display: flex;
+    z-index: 9999
+}
+
+.cookie-box p {
+    font-size: 13px;
+    color: #484848;
+    padding-right: 12px
+}
+
+.cookie-box .btn {
+    background-color: #1d3451
+}
+
+.error-request {
+    margin: 12px 0;
+    padding: 12px;
+    background: #f55347;
+    border-radius: 24px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase
+}
+
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05)
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+@media only screen and (max-width:600px) and (orientation:portrait) {
+    /* .side-bar {
+        max-width: 100%;
+        background-color: #0a0e31;
+        position: fixed;
+        width: 100vw;
+        height: 170px;
+        bottom: 0;
+        z-index: 999
+    } */
+    .section {
+        margin: 0
+    }
+    /* .page {
+        display: block;
+        width: 100%;
+        float: left;
+        margin-bottom: 35vh
+    } */
+    /* .folder {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 12px
+    } */
+    .side-bar {
+        position: fixed;
+        bottom: -40px;
+        width: 100%;
+        z-index: 9999;
+    }
+    font {
+        font: 10px!important;
+    }
+    .total-cards {
+        margin-bottom: 20px;
+    }
+    .folder .tarot-img {
+        width: auto;
+        max-height: 140px;
+        margin: 6px;
+        transform: rotate(4deg);
+        transition: all ease .2s
+    }
+    /* #diana-box {
+        display: inline-block
+    } */
+    .diana-badge {
+        padding: 16px 16px 0;
+        display: inline-block;
+        width: 100%
+    }
+    .diana-badge .face {
+        width: 80px;
+        height: 80px;
+        float: left
+    }
+    .diana-badge .firma {
+        margin: 32px 0 0 20px
+    }
+    #diana-box .text-box {
+        border-left: 0
+    }
+    .date-title {
+        font-size: 2rem;
+        margin-top: 0
+    }
+    .input-box {
+        margin-bottom: 12px
+    }
+}
+
+@media only screen and (max-width:900px) and (orientation:landscape) {
+    #diana-box .text-box {
+        font-size: 14px;
+        line-height: 18px
+    }
+    .folder {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 12px;
+        padding-top: 16px
+    }
+    .folder .tarot-img {
+        width: auto;
+        max-height: 140px;
+        margin: 6px;
+        transform: rotate(4deg);
+        transition: all ease .2s
+    }
+    .folder .card-box {
+        margin: 6px
+    }
+    .diana-badge .face {
+        width: 80px;
+        height: 80px
+    }
+    .diana-badge .firma {
+        max-width: 80px
+    }
+}
+
+
+/* clock */
+
+
+/* #base {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+
+
+/* #base #clock_base {
+    position: relative;
+  } */
+
+#base #clock_base #hour,
+#base #clock_base #minute,
+#base #clock_base #second {
+    transform-origin: 50% 50%;
+    transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+#clock-face {
+    display: none;
+}
+
+.total-cards {
+    padding: 25px;
+    width: 100%;
+    background-color: rgba(42, 42, 42, 0.5);
+    border: 4px solid #654C35;
+    border-radius: 20px;
+}
+
+
+/* media curies start */
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .folder {
+        text-align: center;
+        /* position: relative;
+        height: 0px!important;
+        padding: 177px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; */
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-height: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .folder {
+        text-align: center;
+        /* position: relative;
+        height: 0px!important;
+        padding: 215px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; */
+    }
+    .counter {
+        /* width: 236px;
+        height: 100px;
+        background: #fff;
+        margin-top: 16px;
+        margin-left: -86px; */
+        border-radius: 18px;
+        font-size: 40px;
+        padding: 26px 0;
+        text-shadow: 1px 1px 1px #000;
+        color: #d32f2f;
+        text-align: center;
+        -webkit-box-shadow: 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%), 0 2px 4px -1px rgb(0 0 0 / 30%);
+        box-shadow: 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%), 0 2px 4px -1px rgb(0 0 0 / 30%);
+    }
+}
